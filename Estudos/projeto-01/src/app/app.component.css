@@ -1,0 +1,15 @@
+#p1{
+    background-color: aquamarine;
+}
+
+#div1{
+    background-color: aqua;
+}
+
+
+.estilo{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center
+}
