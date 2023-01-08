@@ -6,8 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./primeiro-componente.component.css']
 })
 export class PrimeiroComponenteComponent {
-  nome: string = "Leandro" ;
+  nome: string = "Leandro Arraes" ;
   idade: number = 31;
-  job: string = "programador";
+  eCivil: string = 'casado'
+  filhos: number = 2
+  curso: string = "Analise e desenvolvimento de sistemas";
+
   
 }

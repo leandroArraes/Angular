@@ -1,5 +1,41 @@
-
+p{
+    margin-top: 8px;
+    width: 95%;
+}
 .title{
-    background-color: brown;
-    padding: 12px;
+    background-color: firebrick;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+    width: 100%;
+    text-align: center;
+    margin-top: 16px;
+    margin-bottom: 0px;
+    border-radius: 4px;
+
+}
+#dados{
+    margin: 0px;
+    padding: 0px;
+    width: 58%;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    text-align: justify;
+    display: flex;
+    flex-direction:column ;
+    
+
+}
+
+#fotoPerfil{
+    width: 180px;
+    height: 200px;
+    width: 160px;
+    border-radius: 9%;
+    margin-top: 16px;
+    border-style: outset;
+    border-color: revert;
 }
