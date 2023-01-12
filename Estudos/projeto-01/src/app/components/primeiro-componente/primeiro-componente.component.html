@@ -1,13 +1,16 @@
 <img id="fotoPerfil" src="assets\leandroArraes.jpg">
 
 
-<div id="dados"> 
-    <h2 class="title">Carta de Apresentação</h2> 
+<div Class="dados">
+    <h3 class="title" >  Carta de Apresentação </h3> 
     <p>
-        Meu nome é <b> {{ nome }}  </b>
-        eu tenho   <b> {{ idade }} </b> anos de idade sou <b> {{eCivil}} </b> 
-        tenho      <b> {{ filhos }} filhos</b>
-        e atualemente estou Cursando <b>{{ curso }}. </b>  
+         <b> Nome:        </b>  {{ nome   }}          <br>
+         <b> Idade:       </b>  {{ idade  }}          <br>
+         <b> Estado civil </b>  {{ eCivil }}          <br>
+         <b> Filhos:      </b>  {{ filhos }}          <br>         
+         <b> Bairro:      </b>  {{ endereco.bairro }} <br>
+         <b> Rua:         </b>  {{ endereco.rua }}    <br>
+         <b> Cidade:      </b>  {{ endereco.cidade }}
     </p>
 </div>
 

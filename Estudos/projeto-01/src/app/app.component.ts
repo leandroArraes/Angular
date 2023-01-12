@@ -6,19 +6,32 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  userName = 'Leandro';
-  graduacao = 'Ads';
 
+  userName = 'Leandro';
+  
+
+  formacao = {
+    graduacao : 'Tecnologica',
+    faculdade :' Senac Rio' ,
+    curso : 'Analise e desenvolvimento de sistemas',
+    modulo : 3
+  };
+
+  
+
+  // Estilos
+  title = 'title';
+  estilop1 = 'estilo';
+  textoLateralEsquerda ='textoLateralEsquerda'; 
+
+
+// objetos
   endereco = {
     rua: 'Araujo Lima',
     numero: '18',
     bairro: 'Tijuca',
     cidade: 'Rio de janeiro'
+    
   };
-
-  title = 'NovoTeste';
-
-  estilop1 = 'estilo'
-  
 
 }

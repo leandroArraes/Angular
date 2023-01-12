@@ -1,3 +1,13 @@
+#divLadoA{
+    width: 25%;
+    background-color: gainsboro;
+}
+
+#divLadoB{
+    width: 75%;
+    margin-left: 12px;
+}
+
 #header{
 color: whitesmoke;
 background-color: firebrick;
@@ -8,15 +18,26 @@ align-items: center;
 padding-left: 8px;
 }
 
-#p1{
-    background-color: aquamarine;
-}
+
 
 .estilo{
+   /* [ngClass]="estilop1"*/
     display:flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 320px;
+    height: 460px;
 }
+
+.textoLateralEsquerda{
+    margin: 0px;
+    padding: 0px;
+    align-items: center;
+    font-size: 16px;
+    text-align: justify;
+    display: flex;
+    flex-direction:column ;
+    width: 95%;
+}
+

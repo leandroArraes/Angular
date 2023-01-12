@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-primeiro-componente',
@@ -6,11 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./primeiro-componente.component.css']
 })
 export class PrimeiroComponenteComponent {
+ @Input() endereco! : {rua: string,numero: string ,bairro: string,cidade:string};
+ @Input() textoLateralEsquerda = '';
   nome: string = "Leandro Arraes" ;
   idade: number = 31;
-  eCivil: string = 'casado'
+  eCivil: string = 'casado';
   filhos: number = 2
-  curso: string = "Analise e desenvolvimento de sistemas";
-
-  
+    
 }

@@ -1,7 +1,11 @@
-<h2 [ngStyle]="{'font-size' : '18px'}">Descrevendo usuário </h2>
+<div class="dados"> 
+<h2 [ngStyle]="{'font-size' : '20px'}"  Class="title"> Universitário </h2>
 
-<p> <b> Nome:      </b> {{ name }}            </p>
-<p> <b> Graduação: </b> {{ gradu }}           </p>
-<p> <b> Rua:       </b> {{ endereco.rua }}    </p>
-<p> <b> Bairro:    </b> {{ endereco.bairro }} </p>
-<p> <b> Cidade:    </b> {{ endereco.cidade }} </p>
+<p>  
+    <b> Facauldade </b> {{ formacao.faculdade }}  <br>   
+    <b> Graduação: </b>  {{ formacao.graduacao }} <br>
+    <b> Curso:     </b>  {{ formacao.curso  }}    <br>
+    <b> Modudo:    </b>  {{ formacao.modulo }}
+</p>
+
+</div>

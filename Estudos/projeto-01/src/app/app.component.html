@@ -1,5 +1,19 @@
-<div id="header"> <h1>  Aula 01 - Angular </h1> </div>
+<div id="divLadoA">
+    <app-primeiro-componente [ngClass]="estilop1" [endereco]="endereco" > </app-primeiro-componente>
+    <hr style="width: 90%;">
+    <app-parent-data  [formacao]="formacao" [ngClass]="textoLateralEsquerda" [ngClass]="estilop1" >  </app-parent-data>
+    
+</div>
 
-<app-primeiro-componente [ngClass]="estilop1"></app-primeiro-componente>
-<app-parent-data [name]="userName" [gradu]="graduacao" [endereco]="endereco"></app-parent-data>
-<app-directives></app-directives>
+<div id="divLadoB">
+
+    <div id="header"> <h1>  Aula 01 - Angular </h1> </div>
+    <app-directives></app-directives>
+
+</div>
+
+
+
+
+
+

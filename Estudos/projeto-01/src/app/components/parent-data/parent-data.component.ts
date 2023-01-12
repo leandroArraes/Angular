@@ -1,4 +1,6 @@
+import { NgClass } from '@angular/common';
 import { Component,Input } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-parent-data',
@@ -6,8 +8,10 @@ import { Component,Input } from '@angular/core';
   styleUrls: ['./parent-data.component.css']
 })
 export class ParentDataComponent {
-  @Input() name:string = '';
-  @Input() gradu:string ='';
-  @Input() endereco! : {rua: string,numero: string ,bairro: string,cidade:string};
+  @Input() formacao! : {curso: string, graduacao: string, faculdade:string ,modulo:number} ;
+  @Input() curso:string =''  ; 
+  @Input() title:string =''  ;
+  @Input() faculdade:string= '';
+  
 
 }

@@ -1,7 +1,9 @@
 p{
     margin-top: 8px;
-    width: 95%;
+    width: 96%;
+    text-align: initial;
 }
+
 .title{
     background-color: firebrick;
     height: 38px;
@@ -16,24 +18,21 @@ p{
     border-radius: 4px;
 
 }
-#dados{
+
+.dados{
     margin: 0px;
     padding: 0px;
-    width: 58%;
-    display: flex;
     align-items: center;
     font-size: 16px;
     text-align: justify;
     display: flex;
     flex-direction:column ;
-    
-
+    width: 95%;
 }
 
 #fotoPerfil{
-    width: 180px;
-    height: 200px;
-    width: 160px;
+    width: 200px;
+    height: 245px;
     border-radius: 9%;
     margin-top: 16px;
     border-style: outset;
