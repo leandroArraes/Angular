@@ -1,35 +1,3 @@
-p{
-    margin-top: 8px;
-    width: 96%;
-    text-align: initial;
-}
-
-.title{
-    background-color: firebrick;
-    height: 38px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: whitesmoke;
-    width: 100%;
-    text-align: center;
-    margin-top: 16px;
-    margin-bottom: 0px;
-    border-radius: 4px;
-
-}
-
-.dados{
-    margin: 0px;
-    padding: 0px;
-    align-items: center;
-    font-size: 16px;
-    text-align: justify;
-    display: flex;
-    flex-direction:column ;
-    width: 95%;
-}
-
 #fotoPerfil{
     width: 200px;
     height: 245px;
