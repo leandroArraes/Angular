@@ -6,10 +6,11 @@ import { Component ,Output,EventEmitter} from '@angular/core';
   styleUrls: ['./change-number.component.css']
 })
 export class ChangeNumberComponent {
-  @Output ()  chengeNumber: EventEmitter<any> = new EventEmitter();
+  @Output ()  changeNumber: EventEmitter<any> = new EventEmitter();
 
   handclick(){
-    this.chengeNumber.emit();
+    this.changeNumber.emit();
+    
   }
 
 }
