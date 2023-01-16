@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+ import { Cursos } from 'src/app/Cursos';
 
 @Component({
   selector: 'app-list-render',
@@ -6,10 +7,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./list-render.component.css']
 })
 export class ListRenderComponent {
-tecnologias =[ 
+tecnologia : Cursos [] =[ 
   {name:"Javascript" ,type:"front-end"},
   {name:"Typescript",type:"front-end"},
   {name:"Java",type:"Back-end"},
   {name:"Python",type:"Back-end"}
 ]
+
+showTipo:string = '';
+
+//alinhado com a interface
+mostrarTipo(curso : Cursos ): void {
+this.showTipo = `${curso.name} é do tipo ${curso.type}`
+}
 }

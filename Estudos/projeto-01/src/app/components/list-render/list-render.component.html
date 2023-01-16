@@ -1,6 +1,14 @@
+<h3>Cursos:</h3>
 <div class="ListTeste">
-    <h3>Cursos:</h3>
+    
     <ul>
-        <li *ngFor="let tecnologia of tecnologias"> {{tecnologia.name}} --- {{tecnologia.type}}</li>
+        
+        <li *ngFor="let tecnologia of tecnologia" style="margin-bottom:8px"> 
+                <button (click)="mostrarTipo(tecnologia)">
+                    {{tecnologia.name}}
+                </button>
+        </li>
+    
     </ul>
+    <h4>{{showTipo}}</h4>
 </div>
