@@ -1,20 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ListRenderComponent } from './list-render.component';
+import { TwoWayBindingComponent } from './two-way-binding.component';
 
-
-
-describe('ListRenderComponent', () => {
-  let component: ListRenderComponent;
-  let fixture: ComponentFixture<ListRenderComponent>;
+describe('TwoWayBindingComponent', () => {
+  let component: TwoWayBindingComponent;
+  let fixture: ComponentFixture<TwoWayBindingComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ListRenderComponent ]
+      declarations: [ TwoWayBindingComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ListRenderComponent);
+    fixture = TestBed.createComponent(TwoWayBindingComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

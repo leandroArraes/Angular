@@ -1,0 +1,14 @@
+
+<p>É preciso importar o FormsModele no app.compnet.ts principal</p>
+<div class="towway">
+    <h3> Testando Formulários</h3>
+    <form >
+        <input type="text" [(ngModel)]="NomeDoInput" name="name" placeholder="Digite seu Nome">
+        <!--o name no inpuyt serve para buscar as configurações padrões do navegador do usuario-->
+        <input  type="submit" (click)="apresentar()" value="Enviar" [ngStyle]="{'margin-left': '10px' }">        
+        <div *ngIf="NomeDoInput != ''"> 
+            <p> {{NomeDoInput}} <br>Apresentando o nome com ngModel</p> 
+            <p> usando uma função no botão {{arquivando}} </p>
+        </div>
+    </form>
+</div>

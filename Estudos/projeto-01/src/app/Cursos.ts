@@ -1,6 +1,8 @@
 export interface Cursos {
-    name: string
+    id:number
+    nome: string
     type: string
+    horas:number
     
 }
 

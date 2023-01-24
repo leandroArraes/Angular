@@ -1,9 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 .appRoot{
-display: flex;
-height: 900px;
-justify-content: space-between;
-}
+    
+    height: 1200px;
+    
+    }
 
 .title{
     background-color: firebrick;
@@ -12,7 +12,7 @@ justify-content: space-between;
     align-items: center;
     justify-content: center;
     color: whitesmoke;
-    width: 100%;
+    width: 64%;
     text-align: center;
     margin-top: 16px;
     margin-bottom: 0px;

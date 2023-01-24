@@ -1,44 +1,17 @@
-<div id="divLadoA">
-    <app-primeiro-componente [ngClass]="estilop1" [endereco]="endereco" > </app-primeiro-componente>
-    <hr style="width: 90%;">
-    <app-parent-data  [formacao]="formacao" [ngClass]="textoLateralEsquerda" [ngClass]="estilop1" >  </app-parent-data>
-    
-</div>
-
-<div id="divLadoB">
-
-    <div id="header"> 
-        
-        <h1>  Aula 01 - Angular </h1> 
-    
+<app-header></app-header>
+<div class="body">
+    <div class="divLadoA">
+        <app-nav></app-nav> 
     </div>
-
-        <b><hr style="width: 100%;"></b>
-
-    <app-directives></app-directives>
-
-        <b><hr style="width: 100%;"></b> 
-
-    <app-if-render></app-if-render>
-
-        <b><hr style="width: 100%;"> </b> 
-
-    <app-eventos> </app-eventos>
-
-        <b><hr style="width: 100%;"> </b> 
-        
-    <app-emitter></app-emitter>
-
-        <b><hr style="width: 100%;"> </b> 
+    <div class="divLadoB" >
+        <router-outlet> </router-outlet>
+    </div>
     
-    <app-list-render> </app-list-render>
-
-        <b><hr style="width: 100%;"> </b> 
-
-    <app-pipes></app-pipes>
-
-
+    
 </div>
+
+
+
 
 
 

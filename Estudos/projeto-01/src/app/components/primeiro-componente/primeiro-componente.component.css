@@ -1,7 +1,14 @@
+.geral{
+display: flex;
+flex-direction: row;
+align-items: center;
+width: 64%;
+}
+
 #fotoPerfil{
-    width: 200px;
-    height: 245px;
-    border-radius: 9%;
+    width: 120px;
+    height: 160px;
+    border-radius: 10%;
     margin-top: 16px;
     border-style: outset;
     border-color: revert;

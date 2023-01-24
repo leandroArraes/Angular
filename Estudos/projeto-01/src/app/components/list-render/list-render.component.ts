@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
- import { Cursos } from 'src/app/Cursos';
+import { Cursos } from 'src/app/Cursos';
+import { ListService } from 'src/app/service/list.service';
 
 @Component({
   selector: 'app-list-render',
@@ -8,16 +9,31 @@ import { Component } from '@angular/core';
 })
 export class ListRenderComponent {
 tecnologia : Cursos [] =[ 
-  {name:"Javascript" ,type:"front-end"},
-  {name:"Typescript",type:"front-end"},
-  {name:"Java",type:"Back-end"},
-  {name:"Python",type:"Back-end"}
-]
+  {id:1,nome:"Javascript" ,type:"front-end",horas:150},
+  {id:2,nome:"Typescript",type:"front-end",horas:150},
+  {id:3,nome:"Java",type:"Back-end",horas:150},
+  {id:4,nome:"Python",type:"Back-end",horas:150}
+];
+
+cursos: Cursos[] = [];
+
 
 showTipo:string = '';
 
 //alinhado com a interface
 mostrarTipo(curso : Cursos ): void {
-this.showTipo = `${curso.name} é do tipo ${curso.type}`
+this.showTipo = `${curso.nome} é do tipo ${curso.type}`
+}
+
+constructor (private listService:ListService){ }
+
+// Remover itens de uma lista
+removerCurso(curso:Cursos){
+  console.log('removendo curso');
+  this.tecnologia = this.listService.remover(this.tecnologia,curso)
+}
+
+getCursos():void{
+  this.listService.getAll().subscribe((cursos) => (this.cursos = cursos));
 }
 }
