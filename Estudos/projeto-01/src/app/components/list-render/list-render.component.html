@@ -19,11 +19,11 @@
     <ul [ngStyle]="{'list-style-type': 'disclosure-closed'}">
         <h3> Aqui estou usando uma requisição http</h3>
         <li *ngFor="let cursos of cursos" style="margin-bottom:8px"> 
-            <a routerLink="/list/{{curso.ID}"> {{cursos.nome}}</a>
+            <a routerLink="/list/{{cursos.id}}"> {{cursos.nome}}</a>
         <p><b>ID:</b> {{cursos.id}} <b>Nome:</b> {{cursos.nome}} <b>Tipo:</b> {{cursos.type}} <b>Horas:</b> {{cursos.horas}}</p>
         </li>
         
     </ul>
     <h4>{{showTipo}}</h4>
 </div>
-<button (click)="getCursos()">cursos http</button>
+<button (click)="getCursos()"> cursos http </button>

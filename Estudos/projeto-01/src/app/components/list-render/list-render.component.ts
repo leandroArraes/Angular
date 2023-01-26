@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
-import { Cursos } from 'src/app/Cursos';
+import { Component,OnInit } from '@angular/core';
+import { Cursos } from 'src/app/Interface/Cursos';
 import { ListService } from 'src/app/service/list.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-list-render',

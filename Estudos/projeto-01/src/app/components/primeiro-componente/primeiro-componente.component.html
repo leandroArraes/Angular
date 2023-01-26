@@ -1,10 +1,10 @@
 <h3 class="title" >  Carta de Apresentação </h3> 
-<div class="geral" >
+<div *ngIf="ok" class="geral" >
     
     <img id="fotoPerfil" src="assets\leandroArraes.jpg">
     
     
-    <div Class="dados" >
+    <div  Class="dados" >
         
         <p class="p-LateralEsquerda" >
              <b> Nome:        </b>  {{ nome   }}          <br>
@@ -12,10 +12,16 @@
              <b> Estado civil </b>  {{ eCivil }}          <br>
              <b> Filhos:      </b>  {{ filhos }}          <br>         
              <b> Bairro:      </b>  {{ endereco.bairro }} <br>
-             <b> Rua:         </b>  {{ endereco.rua }}    <br>
-             <b> Cidade:      </b>  {{ endereco.cidade }}
+             <b> Rua:         </b>  {{ endereco.rua}}    <br>
+             <b> Cidade:      </b>  {{ endereco.cidade}}
         </p>
-    </div></div>
+            
+        
+        
+    </div>
+
+</div>
+<button (click)="getendereco()">ver</button>
 
 
 

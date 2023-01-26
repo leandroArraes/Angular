@@ -9,9 +9,8 @@ import { Title } from '@angular/platform-browser';
 })
 export class ParentDataComponent {
   @Input() formacao! : {curso: string, graduacao: string, faculdade:string ,modulo:number} ;
-  @Input() curso:string =''  ; 
-  @Input() title:string =''  ;
-  @Input() faculdade:string= '';
+  @Input() curso:string =''     ; 
+  @Input() title:string =''     ;
+  @Input() faculdade:string= '' ;
   
-
 }

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -26,7 +26,7 @@ export class AppComponent {
 
 
 // objetos
-  endereco = {
+  ender = {
     rua: 'Araujo Lima',
     numero: '18',
     bairro: 'Tijuca',
