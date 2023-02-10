@@ -42,6 +42,7 @@
     flex-direction: column;
     align-items: center;
     width: 62%;
+    height: auto;
     background-color: #dcdcdc9e;
     height: 280px;
     border-radius: 0px 0px 8px 8px;
@@ -83,7 +84,9 @@ text-align: initial;
     .geral{flex-direction: column;
         height: auto;
         padding: 0px;
+        padding-bottom: 8px;
         width: 100%;
+        height: auto;
         }
     .dados{font-size: 12px}
    

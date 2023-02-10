@@ -1,14 +1,13 @@
 <h3 class="title" > If Render</h3> 
-<div class="teste-if view">
-    <div class="view2">
+<div class="geral">
+    
         <div *ngIf="canshow"> <h3>Teste com - <b>[ngIf]</b> </h3></div>
         <h3 *ngIf="name === 'Leandro';else nameNotFound">Testando Else </h3>
         <ng-template #nameNotFound > 
             <h3> A variavel nome está com nome diferente da condição</h3>
         </ng-template>
 
-    </div>
+</div>
     
 
   
-</div>
