@@ -12,7 +12,9 @@ import { ListService } from 'src/app/service/list.service';
 })
 
 export class ItemDetailComponent {
-cursos? : Cursos ;
+
+  cursos?: Cursos;
+  
 
 constructor(private listService: ListService,private route: ActivatedRoute){
   this.getCursos()
@@ -22,5 +24,10 @@ getCursos(){
   const id = Number(this.route.snapshot.paramMap.get('id')); 
   this.listService.getItem(id).subscribe((cursos)=>(this.cursos = cursos))
 }
+
+
+
+
+
 
 }

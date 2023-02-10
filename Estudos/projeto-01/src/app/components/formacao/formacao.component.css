@@ -1,0 +1,19 @@
+.fotoPerfil{
+       
+       width: 200px;
+       margin-top: 16px;
+}
+
+p{
+    text-align: center;
+    font-size: 18PX;
+}
+
+@media (max-width:900px){
+
+    .fotoPerfil{width: 50%;}
+    p{
+        text-align: center;
+        font-size: 12px;
+    }
+      }

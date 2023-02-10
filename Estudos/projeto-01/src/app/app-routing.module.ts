@@ -10,16 +10,31 @@ import { IfRenderComponent } from "./components/if-render/if-render.component";
 import { ItemDetailComponent } from "./components/item-detail/item-detail.component";
 import { HomeComponent } from "./components/home/home.component";
 import { ParentDataComponent } from "./components/parent-data/parent-data.component";
+import { FormacaoComponent } from "./components/formacao/formacao.component";
+import { ContatoComponent } from "./components/contato/contato.component";
+import { DirectivesComponent } from "./components/directives/directives.component"; 
+import { PipesComponent } from "./components/pipes/pipes.component";
+import { HttpComponent } from "./components/http/http.component";
+import { TwoWayBindingComponent } from "./components/two-way-binding/two-way-binding.component";
+
 
 const routes: Routes = [
     {path:'primeiro',component:PrimeiroComponenteComponent },
+    {path:'diretivas',component:DirectivesComponent},
     {path:'list',component:ListRenderComponent},
+    {path:'pipe',component:PipesComponent},
     {path:'eventos',component:EventosComponent},
     {path:'emmiter',component:EmitterComponent},
     {path:'ifrender',component:IfRenderComponent},
     {path:'list/:id',component:ItemDetailComponent},
-    {path:'home',component:HomeComponent},
-    {path:'parent',component:ParentDataComponent}
+    {path:'',component:HomeComponent},
+    {path:'parent',component:ParentDataComponent},
+    {path:'formacao',component:FormacaoComponent},
+    {path:'contato',component:ContatoComponent},
+    {path:'rhttp',component:HttpComponent},
+    {path:'twoway',component:TwoWayBindingComponent},
+
+
 ]
 
 @NgModule({

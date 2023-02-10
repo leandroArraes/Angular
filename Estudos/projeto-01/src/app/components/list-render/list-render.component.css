@@ -4,3 +4,11 @@
 .botaoCurso:hover {
     background-color: rgba(105, 105, 247, 0.418);
 }
+ul{
+    width: 32%;
+}
+
+li {
+    display: flex;
+    justify-content: space-between
+}

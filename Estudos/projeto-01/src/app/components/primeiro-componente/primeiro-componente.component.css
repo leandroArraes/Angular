@@ -1,14 +1,5 @@
-.geral{
-display: flex;
-flex-direction: row;
-align-items: center;
-width: 64%;
-background-color: gainsboro;
-height: 240px;
-border-radius: 0px 0px 8px 8px;
-}
 
-#fotoPerfil{
+.fotoPerfil{
     margin-left: 10%;
     width: 120px;
     height: 160px;
@@ -17,3 +8,18 @@ border-radius: 0px 0px 8px 8px;
     border-style: outset;
     border-color: revert;
 }
+
+@media (max-width:900px){
+
+    .fotoPerfil{width: 100px;
+    height: auto;
+    margin-left: 0%;}
+    p{
+        text-align: center;
+        font-size: 12px;
+        
+    }
+    
+   
+    
+      }

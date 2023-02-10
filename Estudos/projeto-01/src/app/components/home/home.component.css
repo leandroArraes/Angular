@@ -1,0 +1,22 @@
+.geral{
+    flex-direction: column;
+    width: 62%;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    align-items: flex-start;
+    height: auto;
+}
+
+@media (max-width:900px){
+
+    .geral{flex-direction: column;
+        height: auto;
+        padding: 0px;
+        width: 100%;
+        align-items: center
+        }
+        p{text-align: justify;
+            padding: 36px;}
+        
+    
+      };

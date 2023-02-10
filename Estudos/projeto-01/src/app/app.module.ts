@@ -21,6 +21,9 @@ import { HomeComponent } from './components/home/home.component';
 import { NavComponent } from './components/nav/nav.component';
 import { HeaderComponent } from './components/header/header.component';
 import { DadosComponent } from './components/primeiro-componente/dados/dados.component';
+import { FormacaoComponent } from './components/formacao/formacao.component';
+import { ContatoComponent } from './components/contato/contato.component';
+import { HttpComponent } from './components/http/http.component';
 
 
 
@@ -42,7 +45,10 @@ import { DadosComponent } from './components/primeiro-componente/dados/dados.com
     HomeComponent,
     NavComponent,
     HeaderComponent,
-    DadosComponent
+    DadosComponent,
+    FormacaoComponent,
+    ContatoComponent,
+    HttpComponent
   ],
   imports: [
     BrowserModule,FormsModule,AppRoutingModule,HttpClientModule

@@ -3,6 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { Endereco } from 'src/app/Interface/Endereco';
 import { AppComponent } from 'src/app/app.component';
 import { ListService } from 'src/app/service/list.service';
+import { OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-primeiro-componente',
@@ -13,6 +14,10 @@ export class PrimeiroComponenteComponent {
   
  @Input() ender! : {rua: string,numero: string ,bairro: string,cidade:string};
  @Input() textoLateralEsquerda = '';
+ 
+
+
+
   nome: string = "Leandro Arraes" ;
   idade: number = 31;
   eCivil: string = 'casado';
@@ -23,23 +28,13 @@ export class PrimeiroComponenteComponent {
   endereco: Endereco = {rua:'',numero: '' ,bairro: '',cidade:''};
 
   constructor (private listService:ListService){ }
-
-  getendereco():void{
-    this.listService.getEndereco().subscribe((endereco)=>(this.endereco = endereco));
+ 
+ 
+ getendereco():void{
+  this.listService.getEndereco().subscribe((endereco)=>(this.endereco = endereco));
   };
+    // dessa forma eu consigo chamar a função dentro do componente 
+    //sem ela ficar sendo chamada multiplas vezes 
+  end = this.getendereco();
 
-  //endereco : {rua: string,numero: string ,bairro: string,cidade:string};
-
- // constructor(private enderc : ActivatedRoute) {
-  //  this.endereco =this.enderc.snapshot.params['endereco'];
- /// };
-
- /* ender = {
-  rua: 'Araujo Lima',
-  numero: '18',
-  bairro: 'Tijuca',
-  cidade: 'Rio de janeiro'
-  
-}; */
-    
 }

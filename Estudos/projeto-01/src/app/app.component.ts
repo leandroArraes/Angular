@@ -1,5 +1,6 @@
-import { Component, Output } from '@angular/core';
-
+import { Component, Output ,Input} from '@angular/core';
+import { HeaderComponent } from './components/header/header.component';
+import { EventEmitter } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -8,6 +9,8 @@ import { Component, Output } from '@angular/core';
 export class AppComponent {
 
   userName = 'Leandro';
+  
+  geral ='geral ';
   
 
   formacao = {
@@ -37,4 +40,11 @@ export class AppComponent {
   // links
   tec: string = "http://localhost:4200/list"
 
+
+  
+  show:boolean = true;
+
+  mostrarNav():void{
+    this.show = !this.show;
+  }
 }

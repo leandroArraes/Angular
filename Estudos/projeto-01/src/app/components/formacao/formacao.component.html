@@ -1,9 +1,11 @@
 <h3 [ngStyle]="{'font-size' : '20px'}"  Class="title"> Universitário </h3>
 
-<div class="geral" > 
+<div class="geral"  [ngStyle]="{'flex-direction': 'column'}"> 
+
+    <img Class="fotoPerfil" src="assets\senac.png">
 
     <div class="dados">
-        <p class="p-LateralEsquerda">  
+        <p >  
         <b> Facauldade </b>  {{ formacao.faculdade }}  <br>   
         <b> Graduação: </b>  {{ formacao.graduacao }} <br>
         <b> Curso:     </b>  {{ formacao.curso  }}    <br>

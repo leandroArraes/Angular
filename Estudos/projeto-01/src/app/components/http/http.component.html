@@ -1,0 +1,26 @@
+<h3 class="title" >  Requisição HTTP </h3> 
+<div class="view" style="align-items: center;">
+    <h3> Aqui estou usando uma requisição http</h3>
+    <p>Para ver essa funcionalidade é preciso digitar  npm run server no terminal </p>
+    <button style="width:150px;" (click)="getCursos()"> cursos http </button>
+    <div class="view2">
+        
+    <div class="ListTeste"  >
+        
+        <ul [ngStyle]="{'list-style-type': 'disclosure-closed'}">            
+            <li *ngFor="let cursos of cursos" style="margin-bottom:8px"> 
+                <a routerLink="/list/{{cursos.id}}"> {{cursos.nome}}</a>
+            <p><b>ID:</b> {{cursos.id}} <b>Nome:</b> {{cursos.nome}} <b>Tipo:</b> {{cursos.type}} <b>Horas:</b> {{cursos.horas}}</p>
+            <button (click)="removerHttp(cursos)">remover do Banco</button>
+        </li>
+            
+            
+        </ul>
+
+        
+    </div>
+       
+    </div>
+    
+</div>
+    

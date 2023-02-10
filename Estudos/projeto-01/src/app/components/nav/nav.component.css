@@ -54,4 +54,24 @@ a:hover{
 }
 
 
+@media (max-width:900px){
 
+    a{ width: 75%;
+    border-radius: 4px;
+    padding: 6px;
+    margin-bottom: 6px;
+}
+    a{font-size: 12px;}
+
+    a:hover{
+        background-color:rgba(178, 34, 34, 0.486);
+        
+        color: black;
+        border-radius: 4PX;
+        text-decoration: none;
+        margin-left: 4px;
+        width: 75%;
+        
+    }
+
+      }

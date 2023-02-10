@@ -1,29 +1,26 @@
-<h3>Cursos:</h3>
-<div class="ListTeste">
-    
-    <ul>
+<h3 class="title" >  List Render </h3> 
+<div class="view">
+    <div class="view2"> 
+        <h3>Cursos:</h3>
+    <div class="ListTeste">
         
-        <li *ngFor="let tecnologia of tecnologia" style="margin-bottom:8px"> 
-                <button (click)="mostrarTipo(tecnologia)" class="botaoCurso">
-                    {{tecnologia.nome}}
-                </button>
-                <button (click)="removerCurso(tecnologia)">Remover</button>
-        </li>
-    
-    </ul>
-    <h4>{{showTipo}}</h4>
-</div>
-
-<div class="ListTeste"  >
-    
-    <ul [ngStyle]="{'list-style-type': 'disclosure-closed'}">
-        <h3> Aqui estou usando uma requisição http</h3>
-        <li *ngFor="let cursos of cursos" style="margin-bottom:8px"> 
-            <a routerLink="/list/{{cursos.id}}"> {{cursos.nome}}</a>
-        <p><b>ID:</b> {{cursos.id}} <b>Nome:</b> {{cursos.nome}} <b>Tipo:</b> {{cursos.type}} <b>Horas:</b> {{cursos.horas}}</p>
-        </li>
+        <ul>
+            
+            <li *ngFor="let tecnologia of tecnologia" style="margin-bottom:8px"> 
+                    <button (click)="mostrarTipo(tecnologia)" class="botaoCurso">
+                        {{tecnologia.nome}}
+                    </button><div class="espa"> <button (click)="removerCurso(tecnologia)">Remover</button></div>
+                   
+                    
+            </li>
         
-    </ul>
-    <h4>{{showTipo}}</h4>
+        </ul>
+        <h4>{{showTipo}}</h4>
+    </div>
+    
+   
+        
+    </div>
+    
 </div>
-<button (click)="getCursos()"> cursos http </button>
+    

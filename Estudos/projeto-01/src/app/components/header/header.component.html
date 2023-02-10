@@ -1,11 +1,17 @@
-<div class="header">
+<div class="header"[(ngModel)]="tela" >
     <div class="divImg"><img src="assets\logo.png" alt=""></div>
-<hr style="width:45%;margin: 0px;margin-top: 4px;">
-<nav>
-    <a routerLink="primeiro">Sobre Mim </a>
-    <a routerLink="/list"> Formação</a>
-    <a routerLink="emmiter"> Contato</a>
-</nav>
+<hr >
+<div class="separar">
+    
+   <div class="imgMenu " *ngIf=" tela < 900"><img src="assets\menu.png" (click)="abrirNav() " id="menu" alt=""></div>
+    <nav>
+        <a routerLink="primeiro">Sobre Mim </a>
+        <a routerLink="/formacao"> Formação</a>
+        <a routerLink="contato"> Contato</a>
+    </nav>
+
+</div>
+
 
 </div>
 

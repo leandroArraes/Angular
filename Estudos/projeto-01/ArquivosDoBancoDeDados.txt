@@ -1,0 +1,27 @@
+/* "cursos": [
+    {
+      "id": 1,
+      "nome": "Javascritp",
+      "type": "front-end",
+      "horas": 180
+    },
+    {
+      "id": 2,
+      "nome": "Typescritp",
+      "type": "front-end",
+      "horas": 180
+    },
+    {
+      "id": 3,
+      "nome": "Angular",
+      "type": "front-end",
+      "horas": 150
+    },
+    {
+      "id": 4,
+      "nome": "Python",
+      "type": "front-end",
+      "horas": 150
+    } */
+
+}

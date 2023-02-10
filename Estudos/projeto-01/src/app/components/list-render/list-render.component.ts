@@ -16,7 +16,7 @@ tecnologia : Cursos [] =[
   {id:4,nome:"Python",type:"Back-end",horas:150}
 ];
 
-cursos: Cursos[] = [];
+cursos: Cursos[]=[];
 
 
 showTipo:string = '';
