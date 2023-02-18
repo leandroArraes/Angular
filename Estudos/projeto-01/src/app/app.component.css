@@ -10,6 +10,7 @@
 
 .divLadoB{
     width: 100%;
+    margin-left: 7%;
     
 }
 
@@ -35,3 +36,8 @@
 }
 
 
+@media (max-width:900px){
+    .divLadoB{
+        margin-left: 0%;     
+    }
+}
