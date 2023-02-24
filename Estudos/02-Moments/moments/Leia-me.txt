@@ -1,0 +1,43 @@
+Projeto Moments 
+
+1° Criar novo Projeto
+    >> ng new <nome> 
+        >> ng new moments
+            >> Usar Router
+            >> Definir css
+
+2° Inicializar o Projeto
+    >> ng start
+
+3° Inicializar Servidor 
+    >> ng serve 
+
+4°  criando componentes da estrutuda da pagina 
+        >> ng generate component components/header
+        >> ng g c components/footer
+
+            >> criando as paginas do site
+                 >> ng g c components/pages/
+                 >> ng g c components/pages/home
+                 >> ng g c components/pages/new-moment
+                 >> ng g c components/moment-form
+
+5° Adicionar os novos componetes as rotas >> app-routing.
+
+6° fazer as importações de http e forms no arquivo app.module
+
+7° criar a interface na pasta app 
+    >> Moments.ts
+    >> Coment.ts
+    >> Response.ts 
+        >> a interface Response sera com o objetivo de receber respostas para poder trabalhar com
+            as duas intidades comentarios de moments
+            para facilitar o tratamento 
+
+    >> Lembrando que a interface se comunica com o service
+
+8° criar o service 
+    >> ng g service services/momment
+    >> ng g service services/comment
+    >> ng g service services/messages
+
