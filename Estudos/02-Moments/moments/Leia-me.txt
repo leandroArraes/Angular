@@ -41,3 +41,8 @@ Projeto Moments
     >> ng g service services/comment
     >> ng g service services/messages
 
+9° Validar formulario
+    >> é preciso criar um metodo para ser chamado , uma função 
+    >> (ngSubmit)="submit()" Envia dos dados para a validação , não envia caso estaja algo errado
+    >>  estou declarando onde é meu formulario >> #formDir="ngForm"  dispara os inputs 
+    >>  #formDir="ngForm"  dispara os inputs
