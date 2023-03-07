@@ -1,5 +1,7 @@
-import { Component ,Input, OnInit} from '@angular/core';
+import { Component ,EventEmitter,Input, OnInit, Output} from '@angular/core';
 import { FormControl, FormGroup,Validators } from '@angular/forms';
+
+import { Moment } from 'src/app/Moment';
 
 @Component({
   selector: 'app-moment-form',
@@ -7,6 +9,7 @@ import { FormControl, FormGroup,Validators } from '@angular/forms';
   styleUrls: ['./moment-form.component.css']
 })
 export class MomentFormComponent {
+  @Output() onSubmit = new  EventEmitter<Moment>()
   @Input() btnText!:string
 
   momentForm!: FormGroup
@@ -16,7 +19,7 @@ export class MomentFormComponent {
       id: new FormControl(''),
       title: new FormControl('',[Validators.required]),
       description: new FormControl('',[Validators.required]),
-      Image: new FormControl('')
+      image: new FormControl('')
 
     });
   }
@@ -29,16 +32,24 @@ export class MomentFormComponent {
     return this.momentForm.get('description')!;
   }
 
-  get image(){
-    return this.momentForm.get('image')!;
+ /*  função responsavel por jogar a imagem dentro do formulario  */
+  onFileSelected(event:any){
+
+    const file: File = event.target.files[0];
+    this.momentForm.patchValue({image : file});
+
   }
 
   submit(){
     if(this.momentForm.invalid){
       return;
     }
-    console.log("enviou o formulário")
+    console.log(this.momentForm.value)
+
+    this.onSubmit.emit(this.momentForm.value);
   }
+
+  
 
  
 

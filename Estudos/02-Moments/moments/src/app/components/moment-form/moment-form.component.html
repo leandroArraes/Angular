@@ -34,7 +34,7 @@
 
     <div class="form-group">
         <label for="image">Coloque sua melhor foto:</label>
-        <input type="file">
+        <input type="file" (change)="onFileSelected($event)">
     </div>
     <input type="submit" value="{{ btnText }}">
 
