@@ -46,3 +46,17 @@ Projeto Moments
     >> (ngSubmit)="submit()" Envia dos dados para a validação , não envia caso estaja algo errado
     >>  estou declarando onde é meu formulario >> #formDir="ngForm"  dispara os inputs 
     >>  #formDir="ngForm"  dispara os inputs
+
+10° Validação de envio de arquivo metodo 
+        >> (change)="onFileSelected($event)
+            >> responsavel por jogar a imagem no formulario 
+
+11° Environments 
+        >> centraliza a url de api , Para a uso dentro do sistema 
+        >> dentro de Environments.ts 
+            >> declarar a variavel:
+            >> baseApiUrl: 'http//localhost:3333/',
+        >> para poder usar essa variavel eu tenho que importar
+        >> import { environment } from 'src/environments/environment';
+            >> dentro do service que quero usar 
+            >> dentro do service a variavel deve ser declarada como privada
