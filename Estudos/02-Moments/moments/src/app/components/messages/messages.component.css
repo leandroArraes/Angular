@@ -1,0 +1,28 @@
+.messeges{
+    position: fixed;
+    top:3 em;
+    width:50%;
+    margin-left: 50%;
+    left: -25%;
+    z-index: 10;
+    background-color: #FFF;
+    border: 3px solid #DCE129;
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+}
+
+.messeges-reader{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+
+.messeges-reader button{
+    padding: 0.5em;
+    cursor: pointer;
+}
+
+.messeges p{
+    font-size: 1.2 em;
+}

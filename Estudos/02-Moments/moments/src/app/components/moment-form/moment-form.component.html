@@ -6,7 +6,7 @@
 
  <!-- (ngSubmit)="submit()" Envia dos dados para a validação, não envia caso estaja algo errado -->
  <!-- #formDir="ngForm" dispara os inputs -->
-<form (ngSubmit)="submit()" [formGroup]="momentForm" #formDir="ngForm">
+<form (ngSubmit)="submit()"  [formGroup]="momentForm" #formDir="ngForm">
     <div class="form-group">
         <label for="Title">Título:</label>
         <input
@@ -36,6 +36,5 @@
         <label for="image">Coloque sua melhor foto:</label>
         <input type="file" (change)="onFileSelected($event)">
     </div>
-    <input type="submit" value="{{ btnText }}">
-
+    <input type="submit"  value="{{ btnText }}">
 </form>

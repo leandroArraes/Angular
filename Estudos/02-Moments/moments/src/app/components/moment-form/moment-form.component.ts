@@ -1,5 +1,6 @@
 import { Component ,EventEmitter,Input, OnInit, Output} from '@angular/core';
 import { FormControl, FormGroup,Validators } from '@angular/forms';
+import { throttleTime } from 'rxjs';
 
 import { Moment } from 'src/app/Moment';
 
@@ -47,8 +48,11 @@ export class MomentFormComponent {
     console.log(this.momentForm.value)
 
     this.onSubmit.emit(this.momentForm.value);
-  }
+    // this.momentForm.reset();
 
+  }
+  
+ 
   
 
  

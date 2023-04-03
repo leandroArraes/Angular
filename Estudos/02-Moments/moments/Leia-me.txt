@@ -60,3 +60,9 @@ Projeto Moments
         >> import { environment } from 'src/environments/environment';
             >> dentro do service que quero usar 
             >> dentro do service a variavel deve ser declarada como privada
+
+12° Criando componete de Mensageria 
+     
+    >> ng g c components/messages
+    >> ng add @fortawesome/angular-fontawesome@latest
+    >> fontwesome dever importado no model , ele já vem nessa nover versão do angular
